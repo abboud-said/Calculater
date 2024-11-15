@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>  Calculater </title>
+
+<link rel="styleSheet" href="Calculater.css">
+</head>
+																																																						
+<body>
+
+  <!-- Here display the calculation-->
+
+  <p class="js-display calculation"> </p>
+<p>
+
+<!--Buttons-->
+
+<button onclick="
+calculate(1);
+" class="calculator-button grey-button"> 1 </button>
+
+<button onclick="
+calculate(2);
+" class="calculator-button grey-button"> 2 </button>
+
+<button onclick="
+calculate(3);
+" class="calculator-button grey-button"> 3 </button>
+
+<button onclick="
+calculation += ` + `;
+console.log(calculation);
+" class="calculator-button orange-button"> + </button>
+
+</p>
+
+
+<p>
+
+<button onclick="
+calculate(4);
+  " class="calculator-button grey-button"> 
+4
+</button>
+
+<button onclick="
+calculate(5);
+" class="calculator-button grey-button"> 
+5
+</button>
+
+<button onclick="
+calculate(6);
+  " class="calculator-button grey-button"> 
+6
+</button>
+
+<button onclick="
+ calculate(`-`);
+  " class="calculator-button orange-button"> 
+-
+</button>
+
+</p>
+
+
+<p>
+
+<button onclick="
+calculate(7);
+  "class="calculator-button grey-button"> 
+7
+</button>
+
+<button onclick="
+calculate(8);
+  "class="calculator-button grey-button" > 
+8
+</button>
+
+<button onclick="
+calculate(9);
+  "class="calculator-button grey-button"> 
+9
+</button>
+
+<button onclick="
+calculate(`*`);
+" class="calculator-button orange-button"> 
+*
+</button>
+
+</p>
+
+<p>
+
+<button onclick="
+ calculate(0);
+  " class="calculator-button grey-button"> 
+0
+</button>
+
+<button onclick="
+calculate(`.`);
+  " class="calculator-button grey-button"> 
+.
+</button>
+
+<button
+onclick="
+calculation = eval(calculation);
+console.log(calculation);
+displayCalculation();
+
+" class="calculator-button grey-button"> = </button>
+
+<button onclick="
+calculate(`/`);
+  " class="calculator-button orange-button"> 
+/
+</button>
+
+<p>
+  <button onclick="
+    calculation = '';
+    console.log(calculation);
+
+    // Remember to save the calculation here.
+    localStorage.setItem('calculation', calculation);
+    displayCalculation();
+  " class="calculator-button clear-button grey-button">Clear</button>
+</p>
+
+
+
+	<script src="Calculater.js"> </script>
+
+</body>
+</html>
+
+
+
