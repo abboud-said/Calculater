@@ -1,5 +1,5 @@
 # Calculater
- Calculater
+
 Tech Stack: HTML, CSS, JavaScript
 
 Developed an interactive web-based calculator with a clean UI and smooth functionality.
